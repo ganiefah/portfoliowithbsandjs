@@ -1,0 +1,16 @@
+
+/* logo  */
+img[ alt='logo']{
+     width: 9rem;
+    
+}
+
+/* body  */
+body{
+    text-align: center;
+}
+
+/* image  */
+img[alt = 'Profile']{
+    border-radius: 30px;
+}
