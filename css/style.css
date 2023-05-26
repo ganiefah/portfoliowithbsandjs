@@ -19,7 +19,7 @@ img[alt = 'Profile']{
 :root{
     --primary: rgb(0, 0, 0);
     --secondary: white;
-    --alternative: hsla(144, 63%, 63%, 0.7);
+    --alternative: hsla(110, 65%, 63%, 0.856);
     --awesomeColor: rgb(99, 237, 84);
     --green: rgb(25, 208, 25);
     --mainBox-shadow: -8px -3px 23px 5px rgba(149, 225, 98, 0.75);
@@ -40,6 +40,7 @@ img[alt = 'Profile']{
 }  
 .card:nth-child(odd) {
     position: relative;
+    box-shadow: .5vw .2vw .7vw var(--awesomeColor);
 }
 
 .card:nth-child(even) {
@@ -47,17 +48,107 @@ img[alt = 'Profile']{
     margin-left: auto;
     position: relative;
 }
-.card:nth-child(even)::after {
-    position: absolute;
-    content: '';
-    top: 90px;
-    z-index: 20;
-    left: -2em;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--awesomeColor);
-    box-shadow: 10s .5vw 1vw rgba(75, 199, 116, 0.9);
+/* html  */
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #57df5a;
+    text-align: center; 
+    line-height: 30px;
+    color: white;
+   
+  }
+
+  #myProgress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  /* css  */
+  #myBar1 {
+    width: 10%;
+    height: 30px;
+    background-color: #57df5a;
+    text-align: center; 
+    line-height: 30px;
+    color: white;
+   
+  }
+
+  #myProgress1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  /* bootstrap  */
+  #myBar2 {
+    width: 10%;
+    height: 30px;
+    background-color: #57df5a;
+    text-align: center; 
+    line-height: 30px;
+    color: white;
+   
+  }
+
+  #myProgress2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  /* javascript  */
+  #myBar3 {
+    width: 10%;
+    height: 30px;
+    background-color: #57df5a;
+    text-align: center; 
+    line-height: 30px;
+    color: white;
+   
+  }
+
+  #myProgress3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+
+  .click{
+    border-radius: 10px;
+    margin-top: 10px; 
+    background-color: white;
+    color: black;
+}
+
+.click:hover{
+    background-color: #57df5a;
+}
+
+
+/* footer  */
+.linkedin{
+    color: rgb(37, 33, 33);
+    text-decoration: none;
+    margin-right: 5px;
+   
+}
+
+.git{
+    color: rgb(37, 33, 33);
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+
+footer{
+    background-color: #cdf2b0;
+    margin-top: 10px;
+    padding: 20px;
 }
 
 /* Media query */
