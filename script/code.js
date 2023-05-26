@@ -174,3 +174,54 @@ testimonials.forEach((data)=> {
     </div>
     `
 })
+
+
+// projects 
+let projects = [{
+    id:1,
+    image: "https://i.postimg.cc/SRtkN3Dh/Screenshot-2023-05-11-140653.png",
+    description: 'Krusty Burger Home Page Project',
+    link1: "https://github.com/ganiefah/home.git",
+    link2: "https://celadon-kleicha-5fadcb.netlify.app/",
+    
+},
+{
+    id: 2,
+    image:'https://i.postimg.cc/9FfK1tHq/Screenshot-2023-05-12-093429.png',
+    description: 'calender Example',
+    link1:"https://github.com/ganiefah/calendar.git",
+    link2: "https://charming-scone-180e99.netlify.app/",
+   
+},
+{
+    id: 3,
+    image:'https://i.postimg.cc/d0X80VqN/Screenshot-2023-05-26-144454.png',
+    description: 'Javascript Calculator',
+    link1:"https://github.com/ganiefah/javasript-calculator.git",
+    link2: "https://ganiefah-calculator.netlify.app/",
+   
+},
+{
+    id: 2,
+    image:'https://i.postimg.cc/pVKD2v3k/Screenshot-2023-05-26-144333.png',
+    description: 'BMI Calculator',
+    link1:"https://github.com/ganiefah/bmi_calculator.git",
+    link2: "https://ganiefahs-bmi-calculator.netlify.app/",
+   
+},
+]
+//
+let divProjects = document.querySelector('.projects');
+projects.forEach((data)=> {
+divProjects.innerHTML += `
+<div class="card">
+    <div class="card-body">
+        <p class="text-black">
+        <img src= "${data.image}" class = "img-fluid">
+        <p class="text-black">${data.description}</p>
+        <a href=${data.link1}  target = "_blank" role="button">Github</a>
+        <a href=${data.link2}  target = "_blank" role="button">Netlify</a>
+    </div>
+</div>
+`  
+})
